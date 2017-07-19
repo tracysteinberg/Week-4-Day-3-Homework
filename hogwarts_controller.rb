@@ -5,6 +5,17 @@ require_relative('./models/house.rb')
 require_relative('./models/student.rb')
 
 get '/students' do
-  @result = Students.all
+  @result = Student.all
   erb(:index)
+end
+
+get '/students/new' do
+  @houses = House.all
+erb(:new)
+end
+
+post '/students' do
+ student1 = Student.new(params)
+ student1.save
+ redirect '/students'
 end

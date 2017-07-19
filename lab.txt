@@ -2,12 +2,6 @@ Lab Day!
 
 Dumbledore has asked you to make a system for tracking student enrolments at Hogwarts.
 
-Part 4
-Create a view to show all the students
-
-Part 5
-Create a view to create a new student
-hard code a drop down of house names
 
 
 Part 9

@@ -3,8 +3,8 @@ require_relative('../db/sql_runner.rb')
   
 class Student
 
-  attr_reader(:id)
-  attr_accessor(:age)
+  attr_reader(:id, :first_name, :last_name, :age)
+  attr_accessor()
 
   def initialize(details)
     @id = details['id'].to_i

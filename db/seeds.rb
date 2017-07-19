@@ -16,6 +16,9 @@ house3.save
 house4 = House.new({'name' => "Slytherin"})
 house4.save
 
+house4 = House.new({'name' => "Codeclan"})
+house4.save
+
 student1 = Student.new( {
   'first_name' => 'Harry',
   'last_name' => 'Potter',
