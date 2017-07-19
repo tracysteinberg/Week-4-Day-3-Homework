@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS houses;
 CREATE TABLE houses
 (
   id SERIAL4 PRIMARY KEY,
+  logo VARCHAR(255),
   name VARCHAR(255)
 );
 

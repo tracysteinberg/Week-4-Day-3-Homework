@@ -2,7 +2,3 @@ Lab Day!
 
 Dumbledore has asked you to make a system for tracking student enrolments at Hogwarts.
 
-
-
-Part 9
-Change the new student form to populate the drop down from the House table

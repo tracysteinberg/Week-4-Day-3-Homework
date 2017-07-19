@@ -3,20 +3,21 @@ require_relative('../db/sql_runner.rb')
   
 class House
 
-  attr_reader(:id, :name)
+  attr_reader(:id, :name, :logo)
 
   def initialize(details)
     @id = details['id'].to_i
     @name = details['name']
+    @logo = details['logo']
   end
 
   def save()
       sql = "INSERT INTO houses 
-      (name) 
+      (name, logo) 
       VALUES 
-      ($1) 
+      ($1, $2) 
       RETURNING id;"
-      values = [@name]
+      values = [@name, @logo]
       house = SqlRunner.run(sql, values)
       @id = house[0]['id'].to_i
     end

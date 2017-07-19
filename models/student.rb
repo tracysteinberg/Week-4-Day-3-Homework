@@ -50,7 +50,7 @@ class Student
              WHERE $1 = students.id;"
       values = [@id]
       result = House.map_items(sql, values)[0]
-      return result.name
+      return result
     end
 
     def self.all()

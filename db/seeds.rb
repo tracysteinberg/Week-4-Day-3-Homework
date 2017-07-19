@@ -4,20 +4,20 @@ require_relative('../models/house.rb')
 Student.delete_all
 House.delete_all
 
-house1 = House.new({'name' => "Hufflepuff"})
+house1 = House.new({'name' => "Hufflepuff", 'logo' => 'https://vignette1.wikia.nocookie.net/harrypotter/images/6/62/Download_%289%29.jpg/revision/latest?cb=20160729145653'})
 house1.save
 
-house2 = House.new({'name' => "Ravenclaw"})
+house2 = House.new({'name' => "Ravenclaw", 'logo' => "https://vignette4.wikia.nocookie.net/harrypotter/images/2/28/Download_%284%29.jpg/revision/latest?cb=20160729145945"})
 house2.save
 
-house3 = House.new({'name' => "Gryffindor"})
+house3 = House.new({'name' => "Gryffindor", 'logo' => 'https://vignette2.wikia.nocookie.net/harrypotter/images/e/ee/Gryffindor_Crest-0.jpg/revision/latest?cb=20160729145529'})
 house3.save
 
-house4 = House.new({'name' => "Slytherin"})
+house4 = House.new({'name' => "Slytherin", 'logo' => 'https://vignette1.wikia.nocookie.net/harrypotter/images/7/72/Ccd53034-c798-452a-8032-f28e06250d8f.jpg/revision/latest/scale-to-width-down/160?cb=20160729150848'})
 house4.save
 
-house4 = House.new({'name' => "Codeclan"})
-house4.save
+house5 = House.new({'name' => "Codeclan", 'logo' => 'https://pbs.twimg.com/profile_images/606015765700091905/dv5RE0l9.jpg'})
+house5.save
 
 student1 = Student.new( {
   'first_name' => 'Harry',
